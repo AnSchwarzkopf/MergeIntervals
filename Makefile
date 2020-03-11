@@ -9,5 +9,8 @@ clean:
 	rm -rf dist
 	rm -rf merge_pkg_AnSchwarzkopf.egg-info
 	
-test:
-	python -m py.test tests
+unit-test:
+	python -m py.test tests/test_merge.py
+
+performance-test:
+	python tests/test_performance.py
