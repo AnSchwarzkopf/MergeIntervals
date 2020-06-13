@@ -1,8 +1,5 @@
-init:
-	python -m pip install -r requirements.txt
-
 build:
-	python setup.py sdist bdist_wheel
+	python3 setup.py sdist bdist_wheel
 
 clean:
 	rm -rf build
@@ -10,7 +7,7 @@ clean:
 	rm -rf merge_pkg_AnSchwarzkopf.egg-info
 	
 unit-test:
-	python -m py.test tests/test_merge.py
+	python3 -m py.test tests/test_merge.py
 
 performance-test:
-	python tests/test_performance.py
+	python3 tests/test_performance.py
