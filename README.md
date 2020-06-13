@@ -1,4 +1,8 @@
 # MergeIntervals
+Docker usage:
+docker build . -t mergeintervals
+docker run -it --rm -v ${PWD}:/home/mergeintervals mergeintervals
+
 Preconditions:
 - python installed
     - download latest python 3.8 from https://www.python.org/downloads/
