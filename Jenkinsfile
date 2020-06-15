@@ -15,6 +15,7 @@ pipeline {
     stage('Unit Tests') {
       steps {
         sh 'make unit-test'
+        junit '.pytest_cache/unit_test_report.xml'
       }
     }
 
